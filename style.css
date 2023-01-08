@@ -46,6 +46,10 @@ nav {
 nav a {
     font-size: 24px;
 
+    color: #f5f5f5;
+}
+
+nav a:hover {
     color: white;
 }
 
