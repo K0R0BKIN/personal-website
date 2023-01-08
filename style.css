@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start 2P:wght@400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Press Start 2P';
+}
+
+a {
+    text-decoration: none;
+    color: initial;
 }
 
 #welcome-section {
@@ -13,6 +18,31 @@ html {
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    gap: 32px;
+
     position: fixed;
-    top: 0;
+    width: 100%;
+    height: auto;
+
+    background: black;
+}
+
+nav a {
+    font-size: 24px;
+
+    color: white;
+}
+
+@media (max-width: 540px) {
+    nav {
+        justify-content: space-evenly;
+    }
+    nav a {
+        font-size: 18px;
+    }
 }
