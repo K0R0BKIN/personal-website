@@ -22,8 +22,8 @@ a {
     color: initial;
 }
 
-#welcome-section {
-    height: 100vh;
+section {
+    scroll-margin-top: 56px;
 }
 
 /* Navbar */
