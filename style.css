@@ -26,6 +26,11 @@ section {
     scroll-margin-top: 56px;
 }
 
+.project-thumbnail {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Navbar */
 
 nav {
@@ -53,11 +58,13 @@ nav a:hover {
     color: white;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 703px) {
     nav {
         justify-content: space-evenly;
     }
+}
 
+@media (max-width: 540px) {
     nav a {
         font-size: 18px;
     }
@@ -93,4 +100,91 @@ nav a:hover {
     #welcome-section p {
         font-size: 20px;
     }
+}
+
+/* Projects section */
+
+#projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+
+    padding: 64px;
+}
+
+.section-title {
+    font-size: 48px;
+    text-align: center;
+}
+
+#project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+#coming-soon {
+    display: none;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.project-thumbnail {
+    width: 25vw;
+    min-width: 256px;
+    aspect-ratio: 1 / 1;
+
+    border: 4px solid;
+}
+
+#tribute-page .project-thumbnail {
+    background-image: url(images/tribute-page-thumbnail.png);
+}
+
+#js-documentation-page .project-thumbnail {
+    background-image: url(images/js-documentation-page-thumbnail.png);
+}
+
+#original-trombones .project-thumbnail {
+    background-image: url(images/original-trombones-thumbnail.png);
+}
+
+.project-card a,
+.project-card p {
+    font-size: 32px;
+}
+
+@media (max-width: 1023px) {
+    #coming-soon {
+        display: inherit;
+        color: var(--black2);
+    }
+}
+
+@media (max-width: 703px) {
+    #coming-soon {
+        display: none;
+    }
+}
+
+@media (max-width: 468px) {
+    .section-title {
+        font-size: 40px;
+    }
+}
+
+#contact-section {
+    display: none;
 }
