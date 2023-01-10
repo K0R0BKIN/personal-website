@@ -31,6 +31,9 @@ a {
 
 section {
     scroll-margin-top: 56px;
+
+    width: 100%;
+    height: calc(100vh - 56px);
 }
 
 .project-thumbnail {
@@ -75,6 +78,11 @@ nav a:hover {
     nav a {
         font-size: 18px;
     }
+
+    section {
+        scroll-margin-top: 50px;
+        height: calc(100vh - 50px);
+    }
 }
 
 /* Welcome section */
@@ -85,9 +93,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 16px;
-
-    width: 100vw;
-    height: 100vh;
 }
 
 #welcome-section h1 {
@@ -117,7 +122,6 @@ nav a:hover {
     justify-content: center;
     gap: 64px;
 
-    width: 100vw;
     min-height: 100vh;
     height: auto;
 
