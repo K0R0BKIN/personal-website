@@ -61,11 +61,11 @@ nav {
 nav a {
     font-size: 24px;
 
-    color: #f5f5f5;
+    color: var(--white2);
 }
 
 nav a:hover {
-    color: white;
+    color: var(--white1);
 }
 
 @media (max-width: 703px) {
