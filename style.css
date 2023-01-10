@@ -177,6 +177,14 @@ nav a:hover {
     font-size: 32px;
 }
 
+.project-card a {
+    color: var(--black2);
+}
+
+.project-card a:hover {
+    color: var(--black1);
+}
+
 @media (max-width: 1023px) {
     #coming-soon {
         display: inherit;
