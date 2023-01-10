@@ -227,6 +227,10 @@ nav a:hover {
     color: var(--black2);
 }
 
+.contact-link:hover {
+    color: var(--black1);
+}
+
 #contact-links a:nth-of-type(2) {
     position: relative;
     right: 3px;
