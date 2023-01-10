@@ -235,9 +235,30 @@ nav a:hover {
     position: relative;
     right: 3px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: auto;
+
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 703px) {
     #contact-section {
         padding: 128px 32px 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
     }
 }
 }
