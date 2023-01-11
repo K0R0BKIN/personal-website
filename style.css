@@ -26,7 +26,11 @@
 
 a {
     text-decoration: none;
-    color: initial;
+    color: var(--black2);
+}
+
+a:hover {
+    color: var(--black1);
 }
 
 section {
@@ -179,14 +183,6 @@ nav a:hover {
     font-size: 32px;
 }
 
-.project-card a {
-    color: var(--black2);
-}
-
-.project-card a:hover {
-    color: var(--black1);
-}
-
 @media (max-width: 1023px) {
     #coming-soon {
         display: inherit;
@@ -226,11 +222,6 @@ nav a:hover {
 
 .contact-link {
     font-size: 24px;
-    color: var(--black2);
-}
-
-.contact-link:hover {
-    color: var(--black1);
 }
 
 #contact-links a:nth-of-type(2) {
