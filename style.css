@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start 2P:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start 2P:wght@400&display=swap&text');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start 2P:wght@400&display=swap&text=♥');
 
 /* Global */
 
@@ -39,6 +40,21 @@ section {
 .project-thumbnail {
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* Icons */
+
+.social-link::after {
+    content: ">";
+    position: relative;
+    left: 16px;
+}
+
+.project-card a::after {
+    content: ">";
+    position: relative;
+    top: 2px;
+    left: 16px;
 }
 
 /* Navbar */
@@ -261,17 +277,4 @@ footer {
         gap: 24px;
         text-align: center;
     }
-}
-
-.social-link::after {
-    content: ">";
-    position: relative;
-    left: 16px;
-}
-
-.project-card a::after {
-    content: ">";
-    position: relative;
-    top: 2px;
-    left: 16px;
 }
