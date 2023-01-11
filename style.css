@@ -184,8 +184,10 @@ nav a:hover {
 }
 
 .project-thumbnail img {
+    object-fit: cover;
+    
     width: 100%;
-    object-fit: contain;
+    height: 100%;
 }
 
 #whats-next {
@@ -221,6 +223,7 @@ nav a:hover {
     .section-title {
         font-size: 40px;
     }
+
     #projects-section {
         padding: 64px 32px;
     }
