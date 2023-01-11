@@ -98,6 +98,8 @@ nav a:hover {
     align-items: center;
     gap: 16px;
 
+    text-align: center;
+
     height: 100vh;
 }
 
