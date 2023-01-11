@@ -178,8 +178,7 @@ nav a:hover {
     background-image: url(images/original-trombones-thumbnail.png);
 }
 
-.project-card a,
-.project-card p {
+.project-card-button {
     font-size: 32px;
 }
 
