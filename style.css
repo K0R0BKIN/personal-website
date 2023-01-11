@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start 2P:wght@400&display=swap');
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url(/fonts/PressStart2P-Regular.ttf) format('truetype');
+    font-display: block;
+}
 
 /* Global */
 
 :root {
     --black1: black;
-    --black2: rgba(0, 0, 0, 0.7);
+    --black2: rgba(0, 0, 0, 0.8);
     --black3: rgba(0, 0, 0, 0.3);
+
+    --white1: white;
+    --white2: #f5f5f5;
 }
 
 * {
@@ -19,11 +26,18 @@
 
 a {
     text-decoration: none;
-    color: initial;
+    color: var(--black2);
+}
+
+a:hover {
+    color: var(--black1);
 }
 
 section {
     scroll-margin-top: 56px;
+
+    width: 100%;
+    height: calc(100vh - 56px);
 }
 
 .project-thumbnail {
@@ -51,11 +65,11 @@ nav {
 nav a {
     font-size: 24px;
 
-    color: #f5f5f5;
+    color: var(--white2);
 }
 
 nav a:hover {
-    color: white;
+    color: var(--white1);
 }
 
 @media (max-width: 703px) {
@@ -68,6 +82,11 @@ nav a:hover {
     nav a {
         font-size: 18px;
     }
+
+    section {
+        scroll-margin-top: 50px;
+        height: calc(100vh - 50px);
+    }
 }
 
 /* Welcome section */
@@ -79,7 +98,6 @@ nav a:hover {
     align-items: center;
     gap: 16px;
 
-    width: 100vw;
     height: 100vh;
 }
 
@@ -110,8 +128,7 @@ nav a:hover {
     justify-content: center;
     gap: 64px;
 
-    width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 56px);
     height: auto;
 
     padding: 64px;
@@ -169,7 +186,7 @@ nav a:hover {
 @media (max-width: 1023px) {
     #coming-soon {
         display: inherit;
-        color: var(--black2);
+        color: var(--black3);
     }
 }
 
@@ -185,6 +202,68 @@ nav a:hover {
     }
 }
 
+/* Contact section */
+
 #contact-section {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    padding: 128px 64px 64px;
+    gap: 64px;
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-link {
+    font-size: 24px;
+}
+
+#contact-links a:nth-of-type(2) {
+    position: relative;
+    right: 3px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: auto;
+
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 703px) {
+    #contact-section {
+        padding: 128px 32px 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+}
+
+.contact-link::after {
+    content: ">";
+    position: relative;
+    left: 16px ;
+}
+
+.project-card a::after {
+    content: ">";
+    position: relative;
+    top: 2px;
+    left: 16px;
 }
