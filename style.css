@@ -190,7 +190,7 @@ nav a:hover {
 @media (max-width: 1023px) {
     #coming-soon {
         display: inherit;
-        color: var(--black2);
+        color: var(--black3);
     }
 }
 
