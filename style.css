@@ -202,9 +202,9 @@ nav a:hover {
     }
 }
 
-/* Contact section */
+/* Links section */
 
-#contact-section {
+#links-section {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -214,17 +214,17 @@ nav a:hover {
     gap: 64px;
 }
 
-#contact-links {
+#social-links {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.contact-link {
+.social-link {
     font-size: 24px;
 }
 
-#contact-links a:nth-of-type(2) {
+#social-links a:nth-of-type(2) {
     position: relative;
     right: 3px;
 }
@@ -242,7 +242,7 @@ footer {
 }
 
 @media (max-width: 703px) {
-    #contact-section {
+    #links-section {
         padding: 128px 32px 32px;
     }
 }
@@ -255,7 +255,7 @@ footer {
     }
 }
 
-.contact-link::after {
+.social-link::after {
     content: ">";
     position: relative;
     left: 16px ;
