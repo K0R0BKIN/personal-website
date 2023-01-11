@@ -264,7 +264,15 @@ footer {
     }
 }
 
-.contact-link::after,
+.contact-link::after {
+    content: ">";
+    position: relative;
+    left: 16px ;
+}
+
 .project-card a::after {
-    content: " >";
+    content: ">";
+    position: relative;
+    top: 2px;
+    left: 16px;
 }
