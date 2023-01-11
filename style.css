@@ -147,23 +147,26 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-#coming-soon {
-    display: none;
-}
-
 .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
+
+    width: 25vw;
+    min-width: 256px;
 }
 
 .project-thumbnail {
-    width: 25vw;
-    min-width: 256px;
+    width: 100%;
     aspect-ratio: 1 / 1;
 
     border: 4px solid;
+}
+
+.project-card-button {
+    font-size: 32px;
+    text-align: center;
 }
 
 #tribute-page .project-thumbnail {
@@ -178,20 +181,31 @@ nav a:hover {
     background-image: url(images/original-trombones-thumbnail.png);
 }
 
-.project-card a,
-.project-card p {
-    font-size: 32px;
+#whats-next {
+    display: none;
+}
+
+#whats-next .project-thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media (max-width: 1023px) {
-    #coming-soon {
+    .project-card-button {
+        font-size: 24px;
+    }
+
+    #whats-next {
         display: inherit;
         color: var(--black3);
     }
 }
 
 @media (max-width: 703px) {
-    #coming-soon {
+    #whats-next {
         display: none;
     }
 }
@@ -202,9 +216,9 @@ nav a:hover {
     }
 }
 
-/* Contact section */
+/* Links section */
 
-#contact-section {
+#links-section {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -214,17 +228,17 @@ nav a:hover {
     gap: 64px;
 }
 
-#contact-links {
+#social-links {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.contact-link {
+.social-link {
     font-size: 24px;
 }
 
-#contact-links a:nth-of-type(2) {
+#social-links a:nth-of-type(2) {
     position: relative;
     right: 3px;
 }
@@ -242,7 +256,7 @@ footer {
 }
 
 @media (max-width: 703px) {
-    #contact-section {
+    #links-section {
         padding: 128px 32px 32px;
     }
 }
@@ -255,10 +269,10 @@ footer {
     }
 }
 
-.contact-link::after {
+.social-link::after {
     content: ">";
     position: relative;
-    left: 16px ;
+    left: 16px;
 }
 
 .project-card a::after {
