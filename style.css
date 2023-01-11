@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url(/fonts/PressStart2P-Regular.ttf) format('truetype');
-    font-display: block;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start 2P:wght@400&display=swap');
 
 /* Global */
 
