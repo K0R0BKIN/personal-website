@@ -263,4 +263,8 @@ footer {
         text-align: center;
     }
 }
+
+.contact-link::after,
+.project-card a::after {
+    content: " >";
 }
