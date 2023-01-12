@@ -109,9 +109,16 @@ nav a:hover {
     color: var(--white1);
 }
 
+nav a[href="#home-section"] {
+    margin-right: auto;;
+}
+
 @media (max-width: 703px) {
     nav {
         justify-content: space-evenly;
+    }
+    nav a[href="#home-section"] {
+        margin: 0;  
     }
 }
 
