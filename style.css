@@ -222,32 +222,9 @@ nav a[href="#home-section"] {
     height: 100%;
 }
 
-#whats-next {
-    display: none;
-}
-
-#whats-next .project-thumbnail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 @media (max-width: 1023px) {
     .project-card-button {
         font-size: 24px;
-    }
-
-    #whats-next {
-        display: inherit;
-        color: var(--black3);
-    }
-}
-
-@media (max-width: 703px) {
-    #whats-next {
-        display: none;
     }
 }
 
