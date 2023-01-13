@@ -186,11 +186,9 @@ nav a[href="#home-section"] {
 }
 
 #project-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     gap: 64px;
-    flex-wrap: wrap;
 }
 
 .project-card {
@@ -199,8 +197,7 @@ nav a[href="#home-section"] {
     align-items: center;
     gap: 32px;
 
-    width: 25vw;
-    min-width: 256px;
+    width: 100%;
 }
 
 .project-thumbnail {
@@ -222,32 +219,9 @@ nav a[href="#home-section"] {
     height: 100%;
 }
 
-#whats-next {
-    display: none;
-}
-
-#whats-next .project-thumbnail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 @media (max-width: 1023px) {
     .project-card-button {
         font-size: 24px;
-    }
-
-    #whats-next {
-        display: inherit;
-        color: var(--black3);
-    }
-}
-
-@media (max-width: 703px) {
-    #whats-next {
-        display: none;
     }
 }
 
